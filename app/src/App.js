@@ -74,7 +74,7 @@ function App() {
       }}
     >
       <header className="App-header" style={{ width: "90%" }}>
-        <h2 style={{ textAlign: "center" }}>ChatBot Arena Rankings</h2>
+        <h2 style={{ textAlign: "center" }}>Poe Chatbot Arena Rankings</h2>
         <Elo matches={data.map(row => [row.bot_a, row.bot_b, row.winner])} />
         <TableContainer component={Paper} style={{ maxHeight: "50vh", width: "100%", backgroundColor: "#f0f0f0" }}>
           <Table stickyHeader aria-label="sticky table">
@@ -109,6 +109,13 @@ function App() {
             </TableBody>
           </Table>
         </TableContainer>
+        <Paper style={{ padding: "5px", marginTop: "10px", textAlign: "center", fontSize: "small" }}>
+          Want more features? Submit an issue or contribute to the repo <a href="https://github.com/aapatni/chatbot_arena_poe">here</a>.
+          <br />
+          I built this out in a few hours on Saturday April 6th, 2024 for the Poe Hackathon in SF.
+          <br />
+          I think the future has a semantic search, more LLMs, better UI, and a less hacky elo system! Reach out to me on twitter <a href="https://twitter.com/adam_patni">@adam_patni</a> if you want to chat!
+        </Paper>
       </header>
     </div>
   );
